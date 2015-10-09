@@ -58,7 +58,7 @@ object Form1: TForm1
   object Edit6: TEdit
     Left = 168
     Height = 27
-    Top = 136
+    Top = 160
     Width = 40
     TabOrder = 5
     Text = '0.1'
@@ -66,7 +66,7 @@ object Form1: TForm1
   object LabelD: TLabel
     Left = 8
     Height = 17
-    Top = 136
+    Top = 160
     Width = 151
     Caption = 'Приборная погрешность:'
     ParentColor = False
@@ -74,7 +74,7 @@ object Form1: TForm1
   object Button1: TButton
     Left = 216
     Height = 25
-    Top = 136
+    Top = 160
     Width = 40
     Caption = 'Do!'
     OnClick = Button1Click
@@ -83,26 +83,18 @@ object Form1: TForm1
   object Label1: TLabel
     Left = 16
     Height = 17
-    Top = 168
-    Width = 105
-    Caption = 'Толщина 1 листа:'
+    Top = 192
+    Width = 67
+    Caption = '-результат-'
     ParentColor = False
   end
-  object EditN1: TEdit
-    Left = 72
+  object EditN: TEdit
+    Left = 168
     Height = 27
-    Top = 96
+    Top = 99
     Width = 40
     TabOrder = 7
     Text = '500'
-  end
-  object LabelN: TLabel
-    Left = 16
-    Height = 17
-    Top = 96
-    Width = 46
-    Caption = 'Листов:'
-    ParentColor = False
   end
   object Labelmm: TLabel
     Left = 311
@@ -110,6 +102,40 @@ object Form1: TForm1
     Top = 72
     Width = 18
     Caption = 'мм'
+    ParentColor = False
+  end
+  object RBtn_N: TRadioButton
+    Left = 50
+    Height = 22
+    Top = 104
+    Width = 67
+    Caption = 'Листов'
+    TabOrder = 8
+  end
+  object RBtn_T: TRadioButton
+    Left = 50
+    Height = 22
+    Top = 128
+    Width = 109
+    Caption = 'Толщина, мкм'
+    Checked = True
+    TabOrder = 9
+    TabStop = True
+  end
+  object EditT: TEdit
+    Left = 168
+    Height = 27
+    Top = 128
+    Width = 40
+    TabOrder = 10
+    Text = '105.0'
+  end
+  object LabelWat: TLabel
+    Left = 16
+    Height = 17
+    Top = 8
+    Width = 321
+    Caption = 'Вычисляет кол-во листов в стопке или толщину листа'
     ParentColor = False
   end
 end
