@@ -42,7 +42,7 @@ var
   ad:array of Double;
   ie,t:Single;
   d:Double;
-  amount:LongInt;
+  amount,a_abs:LongInt;
 
 implementation
 
@@ -121,7 +121,9 @@ begin
   begin
     amount:=Round(d*1000000/t);
     Str(amount,sd);
-    Label1.Caption:='В пачке '+sd+' листов';
+    a_abs:=Round(d*eps*1000000);
+    Str(a_abs,sabs);
+    Label1.Caption:='В пачке '+sd+'~'+sabs+' листов';
   end;
 end;
 
